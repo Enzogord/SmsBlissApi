@@ -9,31 +9,31 @@ namespace SmsBlissAPI.Model
 		/// <summary>
 		/// Подпись активирована и готова к использованию
 		/// </summary>
-		[DataMember(Name = "active")]
+		[EnumMember(Value = "active")]
 		Active,
 
 		/// <summary>
 		/// Новая подпись
 		/// </summary>
-		[DataMember(Name = "new")]
+		[EnumMember(Value = "new")]
 		New,
 
 		/// <summary>
 		/// Подпись в процессе активации
 		/// </summary>
-		[DataMember(Name = "pending")]
+		[EnumMember(Value = "pending")]
 		Pending,
 
 		/// <summary>
 		/// Подпись заблокирована
 		/// </summary>
-		[DataMember(Name = "blocked")]
+		[EnumMember(Value = "blocked")]
 		Blocked,
 
 		/// <summary>
 		/// Подпись по умолчанию, готова к использованию
 		/// </summary>
-		[DataMember(Name = "default")]
+		[EnumMember(Value = "default")]
 		Default
 	}
 }

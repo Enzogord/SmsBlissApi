@@ -6,9 +6,9 @@ namespace SmsBlissAPI.Model
 	[DataContract]
 	public enum BalanceType
 	{
-		[DataMember(Name = "RUB")]
+		[EnumMember(Value = "RUB")]
 		RUB,
-		[DataMember(Name = "SMS")]
+		[EnumMember(Value = "SMS")]
 		SMS
 	}
 }

@@ -8,27 +8,27 @@ namespace SmsBlissAPI.Model
 	[DataContract]
 	public enum MessageStatus
 	{
-		[DataMember(Name = "queued")]
+		[EnumMember(Value = "queued")]
 		[Display(Name = "Сообщение находится в очереди")]
 		Queued,
 
-		[DataMember(Name = "delivered")]
+		[EnumMember(Value = "delivered")]
 		[Display(Name = "Сообщение доставлено")]
 		Delivered,
 
-		[DataMember(Name = "delivery error")]
+		[EnumMember(Value = "delivery error")]
 		[Display(Name = "Ошибка доставки SMS(абонент в течение времени доставки находился вне зоны действия сети или номер абонента заблокирован)")]
 		DeliveryError,
 
-		[DataMember(Name = "smsc submit")]
+		[EnumMember(Value = "smsc submit")]
 		[Display(Name = "Сообщение доставлено в SMSC")]
 		SmscSubmit,
 
-		[DataMember(Name = "smsc reject")]
+		[EnumMember(Value = "smsc reject")]
 		[Display(Name = "Сообщение отвергнуто SMSC(номер заблокирован или не существует)")]
 		SmscReject,
 
-		[DataMember(Name = "incorrect id")]
+		[EnumMember(Value = "incorrect id")]
 		[Display(Name = "Неверный идентификатор сообщения")]
 		IncorrectId
 	}

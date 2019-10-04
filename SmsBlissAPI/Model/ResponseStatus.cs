@@ -6,9 +6,9 @@ namespace SmsBlissAPI.Model
 	[DataContract]
 	public enum ResponseStatus
 	{
-		[DataMember(Name = "ok")]
+		[EnumMember(Value = "ok")]
 		Ok,
-		[DataMember(Name = "error")]
+		[EnumMember(Value = "error")]
 		Error
 	}
 }
